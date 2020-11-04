@@ -19,7 +19,16 @@ get_header(); ?>
 	<div id="content-wrap" class="container clr">
 
 		<?php do_action( 'ocean_before_primary' ); ?>
-
+		<?php 
+			$url = $_SERVER["REQUEST_URI"];
+			$url = explode('/', $url);
+			$url = $url[count($url) - 2];
+		?>
+		<?php if($url == 'courses'):?>
+			<style>
+				#primary{ padding: 0px; width: 100%; }
+			</style>
+		<?php endif;?>
 		<div id="primary" class="content-area clr">
 
 			<?php do_action( 'ocean_before_content' ); ?>
@@ -128,3 +137,4 @@ get_header(); ?>
 	<?php do_action( 'ocean_after_content_wrap' ); ?>
 
 <?php get_footer(); ?>
+

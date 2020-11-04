@@ -54,29 +54,21 @@ if ( 'thumbnail-entry' === $style ) {
 
 				// Title.
 				if ( 'title' === $element ) {
-
+					echo '<div class="course-partial-title">';
 					get_template_part( 'partials/entry/header' );
-
-				}
-
-				// Meta.
-				if ( 'meta' === $element ) {
-
-					get_template_part( 'partials/entry/meta' );
+					echo '</div>';
 
 				}
 
 				// Content.
 				if ( 'content' === $element ) {
 
-					get_template_part( 'partials/entry/content' );
+					echo '<div class="course-partial-content">';
 
-				}
-
-				// Read more button.
-				if ( 'read_more' === $element ) {
-
-					get_template_part( 'partials/entry/readmore' );
+					echo substr ( strip_tags( preg_replace( '/\[.*\]/','',get_post_field('post_content', $post->ID, 'edit') ) ), 0, 100 ) . '...';
+					// get_template_part( 'partials/entry/content' );
+					
+					echo '</div>';
 
 				}
 			}
@@ -89,3 +81,4 @@ if ( 'thumbnail-entry' === $style ) {
 	<?php
 }
 ?>
+
