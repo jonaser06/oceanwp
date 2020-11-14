@@ -24,7 +24,7 @@ get_header(); ?>
 			$url = explode('/', $url);
 			$url = $url[count($url) - 2];
 		?>
-		<?php if($url == 'courses'):?>
+		<?php if($url == 'courses' || $url == 'blog'):?>
 			<style>
 				#primary{ padding: 0px; width: 100%; }
 			</style>
