@@ -42,7 +42,7 @@ $caption = get_the_post_thumbnail_caption();
 
 ?>
 
-<div class="thumbnail">
+<!-- <div class="thumbnail">
 
 	<?php
 	// Display post thumbnail.
@@ -58,4 +58,5 @@ $caption = get_the_post_thumbnail_caption();
 	}
 	?>
 
-</div><!-- .thumbnail -->
+</div> -->
+<!-- .thumbnail -->

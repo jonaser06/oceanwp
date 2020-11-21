@@ -99,4 +99,5 @@ $caption = get_the_post_thumbnail_caption();
 	}
 	?>
 
-</div><!-- .thumbnail -->
+</div>
+<!-- .thumbnail -->

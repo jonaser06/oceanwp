@@ -26,7 +26,7 @@ if ( 'quote' === get_post_format() ) {
 
 <?php do_action( 'ocean_before_single_post_meta' ); ?>
 
-<ul class="meta clr">
+<!-- <ul class="meta clr">
 
 	<?php
 	// Loop through meta sections.
@@ -59,6 +59,6 @@ if ( 'quote' === get_post_format() ) {
 
 	<?php } ?>
 
-</ul>
+</ul> -->
 
 <?php do_action( 'ocean_after_single_post_meta' ); ?>

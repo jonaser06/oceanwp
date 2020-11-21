@@ -26,6 +26,7 @@ $heading = apply_filters( 'ocean_single_post_heading', $heading );
 
 <header class="entry-header clr">
 	<<?php echo esc_attr( $heading ); ?> class="single-post-title entry-title"<?php oceanwp_schema_markup( 'headline' ); ?>><?php the_title(); ?></<?php echo esc_attr( $heading ); ?>><!-- .single-post-title -->
-</header><!-- .entry-header -->
+</header>
+<!-- .entry-header -->
 
 <?php do_action( 'ocean_after_single_post_title' ); ?>
